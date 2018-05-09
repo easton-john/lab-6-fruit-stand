@@ -7,21 +7,23 @@ function Coffee(type, image, temp) {
     this.temp = temp;
 }
 
-// properties of coffee
-const latte = new Coffee('Latte', 0, 'cold');
-const dripCoffee = new Coffee('Drip Coffee', 1, 'cold');
-const cappuccino = new Coffee('Cappuccino', 2, 'hot');
-const flatWhite = new Coffee('Flat White', 3, 'hot');
+// defining coffee properties
+const latte = new Coffee('Latte', './images/latte.jpg', 'hot');
+const dripCoffee = new Coffee('Drip Coffee', './images/drip-coffee.jpg', 'hot');
+const cappuccino = new Coffee('Cappuccino', './images/cappuccino.jpg', 'hot');
+const flatWhite = new Coffee('Flat White', './images/flat-white.jpg', 'hot');
+const doppio = new Coffee('Doppio', './images/doppio.jpg', 'hot');
+const americano = new Coffee('Americano', './images/americano.jpg', 'hot');
 
-// list of coffee objects
+// array of coffee objects
 const coffeeList = [
     latte,
     dripCoffee,
     cappuccino,
-    flatWhite
+    flatWhite,
+    doppio,
+    americano
 ];
 
-console.log(coffeeList[0].type);
-console.log(coffeeList[0].temp);
 
 
