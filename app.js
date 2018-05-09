@@ -5,8 +5,8 @@
 function insertSectionEl(i) {
     const div = document.querySelector('div');
     const section = document.createElement('section');
-    section.setAttribute('id', 'coffee-item-' + i);
-    section.setAttribute('class', 'container');
+    section.id = 'coffee-item-' + i.toString();
+    section.classList = 'item-container';
     div.appendChild(section);
 }
 
@@ -15,7 +15,7 @@ function insertCoffeeName(i) {
     const section = document.getElementById('coffee-item-' + i.toString());
     const h2 = document.createElement('h2');
     section.appendChild(h2);
-    h2.setAttribute('id', 'name-' + i.toString());
+    h2.id = 'name-' + i.toString();
     h2.textContent = coffeeList[i].type;
 }
 
@@ -24,8 +24,8 @@ function insertCoffeeImage(i) {
     const section = document.getElementById('coffee-item-' + i.toString());
     const image = document.createElement('img');
     section.appendChild(image);
-    image.setAttribute('class', 'images');
-    image.setAttribute('id', 'image-' + i.toString());
+    image.classList = 'images';
+    image.id = 'image-' + i.toString();
     image.src = coffeeList[i].image;
 }
 
@@ -34,7 +34,7 @@ function insertCoffeeTemp(i) {
     const section = document.getElementById('coffee-item-' + i.toString());
     const par = document.createElement('p');
     section.appendChild(par);
-    par.setAttribute('id', 'par-' + i.toString());
+    par.id = 'par-' + i.toString();
 
     if(coffeeList[i].temp === 'hot') {
         par.classList = 'hot';
@@ -42,7 +42,7 @@ function insertCoffeeTemp(i) {
     }
     else {
         par.classList = 'cold';
-        par.style.color = 'blue';
+        par.style.color = 'blue';   
     }
     
     par.textContent = coffeeList[i].temp.toUpperCase();

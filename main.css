@@ -1,9 +1,12 @@
 body {
     background-color: lightgrey;
+    margin: 0px;
 }
 h1 {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: -1px;
     background-color: burlywood;
     padding: 30px;
     font-size: 70px;
@@ -24,7 +27,7 @@ div {
     margin: 10px;
 }
 
-.container {
+.item-container {
     margin: 20px;
     border-style: solid;
     background-color: lightgoldenrodyellow;

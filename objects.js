@@ -7,7 +7,7 @@ function Coffee(type, image, temp) {
     this.temp = temp;
 }
     
-// defining coffee properties
+// instantiating coffee objects
 const latte = new Coffee('Latte', './images/latte.jpg', 'hot');
 const dripCoffee = new Coffee('Drip Coffee', './images/drip-coffee.jpg', 'hot');
 const cappuccino = new Coffee('Cappuccino', './images/cappuccino.jpg', 'hot');
