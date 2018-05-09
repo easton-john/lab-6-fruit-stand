@@ -2,7 +2,7 @@
 'use strict';
 
 // inserts HTML <section> tag within <div> element for each object
-function insertSection(i) {
+function insertSectionEl(i) {
     const div = document.querySelector('div');
     const section = document.createElement('section');
     section.setAttribute('id', 'coffee-item-' + i);
@@ -11,7 +11,7 @@ function insertSection(i) {
 }
 
 // inserts HTML <h2> tag within <section> element for each object
-function insertH2(i) {
+function insertH2El(i) {
     const section = document.getElementById('coffee-item-' + i.toString());
     const h2 = document.createElement('h2');
     section.appendChild(h2);
@@ -20,7 +20,7 @@ function insertH2(i) {
 }
 
 // inserts HTML <img> tag within <section> element for each object
-function insertImage(i) {
+function insertImgEl(i) {
     const section = document.getElementById('coffee-item-' + i.toString());
     const image = document.createElement('img');
     section.appendChild(image);
@@ -29,7 +29,7 @@ function insertImage(i) {
 }
 
 // inserts HTML <p> tag within <section> element for each object
-function insertPar(i) {
+function insertParEl(i) {
     const section = document.getElementById('coffee-item-' + i.toString());
     const par = document.createElement('p');
     section.appendChild(par);
@@ -38,10 +38,10 @@ function insertPar(i) {
 
 // creates full HTML structure for my objects 
 function htmlStructure(i) {
-    insertSection(i);
-    insertH2(i);
-    insertImage(i);
-    insertPar(i);
+    insertSectionEl(i);
+    insertH2El(i);
+    insertImgEl(i);
+    insertParEl(i);
 }
 
 // grabs coffee name and inserts in h2 tag
