@@ -1,12 +1,15 @@
 /* exported coffeeList */
 
 // object constructor
-function Coffee(type, image, temp) {
-    this.type = type;
-    this.image = image;
-    this.temp = temp;
+class Coffee {
+    constructor(type, image, temp, inventory) {
+        this.type = type;
+        this.image = image;
+        this.temp = temp;
+        this.inventory = inventory;
+    }
 }
-    
+
 // instantiating coffee objects
 const latte = new Coffee('Latte', './images/latte.jpg', 'hot');
 const dripCoffee = new Coffee('Drip Coffee', './images/drip-coffee.jpg', 'hot');
